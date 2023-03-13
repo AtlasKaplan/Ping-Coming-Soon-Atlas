@@ -38,6 +38,11 @@ i {
     cursor: pointer;
 }
 
+i:hover {
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+}
+
 h1 {
     margin: 25px 0 15px 0;
     

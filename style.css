@@ -4,6 +4,7 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
 
+
 main {
     font-family: 'Libre Franklin', sans-serif;
 }
@@ -12,7 +13,7 @@ main {
     width: 80%;
     min-width: 375px;
     text-align: center;
-    margin: 50px auto;
+    margin: 50px auto 0;
     
 }
 
@@ -27,6 +28,15 @@ main {
     width: 65px
 }
 
+i {
+    color: hsl(223, 87%, 63%);
+    border: solid 1px hsl(0, 0%, 59%);
+    border-radius: 100%;
+    padding: 15px;
+    width: 15px;
+    margin: 25px 7.5px;
+    cursor: pointer;
+}
 
 h1 {
     margin: 25px 0 15px 0;
@@ -39,8 +49,9 @@ span {
 
 #email {
     border-radius: 20px;
-    padding: 13px 25% 13px 15px;
+    padding: 13px 20% 13px 15px;
     border-color: hsl(0, 0%, 59%);
+    border: solid 1px hsl(0, 0%, 59%);
     
 }
 
@@ -48,6 +59,7 @@ span {
 button {
     background-color: hsl(223, 87%, 63%);
     border: none;
+    font-weight: 700;
     border-radius: 25px;
     padding: 15px 5%;
     color: white;
@@ -57,7 +69,7 @@ button {
 
 
 .email-container {
-    margin: 25px 0 75px;
+    margin: 25px 0 65px;
     
 }
 
@@ -65,7 +77,6 @@ button {
 
 footer {
     text-align: center;
-    margin: 25px auto;
 }
 
 
@@ -74,6 +85,10 @@ footer {
         min-width: 75%;
     }
     #email {
-        min-width: 45%;
+        min-width: 50%;
+    }
+
+    i {
+        margin-top: 100px;
     }
 }

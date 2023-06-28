@@ -10,22 +10,25 @@ main {
 }
 
 .container {
-    width: 80%;
-    min-width: 375px;
-    text-align: center;
-    margin: 50px auto 0;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2.5vh 2rem;
 }
 
 .main-img {
-    width: 80%;
-    max-width: 650px;
+    width: 100%;
+    max-height: 444px;  
     
 }
+.img-main{
 
+    display: flex;
+    justify-content:center ;
+}
 
 .main-logo {
-    width: 65px
+    width: 100px
 }
 
 i {
@@ -45,7 +48,15 @@ i:hover {
 
 h1 {
     margin: 25px 0 15px 0;
-    
+    font-size: 3rem;
+}
+h2 {
+    text-align: center;
+    color: hsl(354, 100%, 66%);
+    font-size: .75rem;
+    font-weight: 400;
+    margin-top: 5px;
+    display: none;
 }
 span {
     color: hsl(0, 0%, 59%);
@@ -53,11 +64,11 @@ span {
 }
 
 #email {
-    border-radius: 20px;
-    padding: 13px 20% 13px 15px;
-    border-color: hsl(0, 0%, 59%);
+    border-radius: 25px;
+    padding: 1rem 14rem;
+    padding-left: 1rem;
     border: solid 1px hsl(0, 0%, 59%);
-    
+    margin-right: 1rem;
 }
 
 
@@ -66,34 +77,53 @@ button {
     border: none;
     font-weight: 700;
     border-radius: 25px;
-    padding: 15px 5%;
     color: white;
-    margin-top: 10px;
     cursor: pointer;
+    padding: 1rem 4rem;
+    align-self: flex-start;
+}
+button:hover{
+    background-color: white;
+    color: hsl(223, 87%, 63%);
+    border: solid 1px black;
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.mail {
+    display: flex;
+    flex-direction: column;
+
+}
 
 .email-container {
-    margin: 25px 0 65px;
+    margin: 25px 0;
+    height: 75px;
     
 }
 
+.error-state {
+    
+    font-size: .80rem;
+    font-style: italic;
+    color: hsl(354, 100%, 66%);
+    margin-left: 1rem;
+    margin-top: 0.5rem
+};
 
+
+.error-border {
+    border: solid 1px hsl(354, 100%, 66%);
+}
 
 footer {
     text-align: center;
 }
 
 
-@media (max-width:519px){
-    button {
-        min-width: 75%;
-    }
-    #email {
-        min-width: 50%;
-    }
-
-    i {
-        margin-top: 100px;
-    }
+@media (max-width:680px){
+    
 }

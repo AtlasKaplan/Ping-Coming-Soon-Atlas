@@ -33,7 +33,6 @@ main {
 
 i {
     color: hsl(223, 87%, 63%);
-    border: solid 1px hsl(0, 0%, 59%);
     border-radius: 100%;
     padding: 15px;
     width: 15px;
@@ -70,7 +69,9 @@ span {
     border: solid 1px hsl(0, 0%, 59%);
     margin-right: 1rem;
 }
-
+.email:focus{
+    outline: none;
+}
 
 button {
     background-color: hsl(223, 87%, 63%);
@@ -83,9 +84,7 @@ button {
     align-self: flex-start;
 }
 button:hover{
-    background-color: white;
-    color: hsl(223, 87%, 63%);
-    border: solid 1px black;
+    background-color: rgb(42, 98, 124);
 }
 form {
     display: flex;
@@ -106,17 +105,19 @@ form {
 }
 
 .error-state {
-    
+    display: block;
     font-size: .80rem;
     font-style: italic;
     color: hsl(354, 100%, 66%);
     margin-left: 1rem;
     margin-top: 0.5rem
-};
-
+}
+.hide{
+    display: none;
+}
 
 .error-border {
-    border: solid 1px hsl(354, 100%, 66%);
+    border: solid 1px hsl(354, 100%, 66%)!important;
 }
 
 footer {
@@ -124,6 +125,3 @@ footer {
 }
 
 
-@media (max-width:680px){
-    
-}

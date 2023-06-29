@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style-responsive.css">
   <script src="https://kit.fontawesome.com/610580e5d5.js" crossorigin="anonymous"></script>
   
   <title>Frontend Mentor | Ping coming soon page</title>
@@ -24,10 +25,10 @@
       <p>Subscribe and get notified</p>
 
       <div class="email-container">
-        <form id="form" action="">
+        <form id="form" action="" novalidate>
           <div class="mail">
-            <input type="email" name="" id="email" placeholder="Your email addresss...">
-            <p class="error-state">Please provide a valid email address</p>
+            <input type="email" class="email " id="email" placeholder="Your email addresss...">
+            <p class="error-state hide">Please provide a valid email address</p>
           </div>
           <button id="submit-btn">Notify Me</button>
         </form>
@@ -59,5 +60,6 @@
       Coded by <a href="#">Atlas Kaplan</a>.
     </p>
   </footer>
+  <script src="index.js"></script>
 </body>
 </html>

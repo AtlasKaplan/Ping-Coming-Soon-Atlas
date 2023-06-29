@@ -84,7 +84,7 @@ button {
     align-self: flex-start;
 }
 button:hover{
-    background-color: rgb(42, 98, 124);
+    background-color: hsl(225, 67%, 70%);
 }
 form {
     display: flex;

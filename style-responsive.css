@@ -1,3 +1,36 @@
-@media (min-width:680px) {
+@media (max-width:680px) {
     
+    .container{
+        min-width: 315px;
+        margin-top: 60px;
+    }
+    h1{
+        font-size: 1.75rem;    
+    }
+    .mail{
+        height: 65px;
+    }
+    #email{
+        padding: .85rem 6rem;
+        padding-left: 1.5rem;
+    }
+    button{
+        padding: .85rem 7.25rem;
+        margin-top: .75rem;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+    }
+    .img-main{
+        margin-top: 2.5rem;
+        
+    }
+    .main-img{
+        max-width: 500px;
+    }
+
+    .logos{
+        margin-top: 5rem;
+    }
 }
